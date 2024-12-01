@@ -1,0 +1,130 @@
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mansoor's Portfolio</title>
+    <style>
+        /* Basic Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { scroll-behavior: smooth; color: #333; background: #f4f4f4; }
+        
+        /* Header Styling */
+        header { background: #333; color: #fff; padding: 10px 20px; text-align: center; }
+        header h1 { font-size: 2.5em; }
+        
+        /* Navigation Styling */
+        nav ul { display: flex; justify-content: center; list-style: none; }
+        nav ul li { margin: 0 15px; }
+        nav ul li a { color: #fff; text-decoration: none; font-size: 1.2em; }
+        nav ul li a:hover { color: #ffa500; }
+        
+        /* Section Styling */
+        section { padding: 50px 20px; text-align: center; }
+        h2 { font-size: 2em; margin-bottom: 20px; }
+        p { font-size: 1.1em; margin-bottom: 15px; }
+        
+        /* Interactive Animations */
+        .fadeIn { opacity: 0; transform: translateY(20px); transition: all 0.7s ease-in-out; }
+        .fadeIn.visible { opacity: 1; transform: translateY(0); }
+        
+        /* Home Section */
+        #home { background: linear-gradient(to right, #6a11cb, #2575fc); color: #fff; }
+        #home img { border-radius: 50%; width: 150px; height: 150px; margin-top: 20px; }
+        
+        /* About Section */
+        #about { background: #fff; color: #333; }
+        
+        /* Projects Section */
+        #projects { background: #f4f4f4; }
+        .project { display: inline-block; width: 200px; margin: 20px; }
+        .project img { width: 100%; border-radius: 8px; }
+        
+        /* Footer Styling */
+        footer { background: #333; color: #fff; padding: 10px 20px; text-align: center; }
+    </style>
+</head>
+<body>
+
+<!-- Header and Navigation -->
+<header>
+    <h1>Mansoor's Portfolio</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Home Section -->
+<section id="home">
+    <img src="/storage/emulated/0/Download/Mansoor.jpg" alt="Mansoor.jpg">
+    <h2>Welcome to My Portfolio!</h2>
+    <p>Hello! I'm Mansoor, a B.Tech IT student proficient in HTML, CSS, and JavaScript.</p>
+</section>
+
+<!-- About Section -->
+<section id="about" class="fadeIn">
+    <h2>About Me</h2>
+    <p>I’m a final-year IT student passionate about web development and creating interactive, user-friendly websites. I’m always eager to learn new technologies and improve my skills.</p>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="fadeIn">
+    <h2>My Projects</h2>
+    <div class="project">
+        <img src="project1.jpg" alt="Project 1">
+        <p>Restaurant Website</p>
+    </div>
+    <div class="project">
+        <img src="project2.jpg" alt="Project 2">
+        <p>Portfolio Website</p>
+    </div>
+    <!-- Add more projects as needed -->
+</section>
+
+<!-- Services Section -->
+<section id="services" class="fadeIn">
+    <h2>Services</h2>
+    <p>Web Development, Responsive Design, Interactive Features</p>
+</section>
+
+<!-- Achievements Section -->
+<section id="achievements" class="fadeIn">
+    <h2>Achievements</h2>
+    <p>Winner of Web Dev Hackathon 2023, Certified in Front-End Development</p>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="fadeIn">
+    <h2>Contact Me</h2>
+    <p>Email: mansoorenayathulla@gmail.com</p>
+    <p>Phone: 7904812746</p>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Mansoor's Portfolio</p>
+</footer>
+
+<script>
+    // Scroll Animation Script
+    window.addEventListener('scroll', function() {
+        document.querySelectorAll('.fadeIn').forEach(function(el) {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight) {
+                el.classList.add('visible');
+            }
+        });
+    });
+</script>
+</body>
+</html>
+</body>
+</html>
